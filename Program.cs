@@ -10,6 +10,7 @@ builder.Services.AddScoped(sp => new HttpClient
 });
 
 builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<PersonagemService>();
 builder.Services.AddBlazoredLocalStorage();
 // Add services to the container.
 builder.Services.AddRazorComponents()

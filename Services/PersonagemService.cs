@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using RpgBlazor.Models;
+using System.Text.Json;
+using System.Net.Http.Headers;
+
+namespace RpgBlazor.Services
+{
+    public class PersonagemService
+    {
+        private readonly HttpClient _http;
+        
+        public PersonagemService(HttpClient http)
+        {
+            _http = http;
+        }
+
+        public async Task<List<PersonagemViewModels>> GetAllAsync(string token)
+        {
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var response = await _http.GetAsync("Personagems/GetAll");
+            var responseContent = await response.Content.ReadAsStringAsync();
+            List<PersonagemViewModels> lista = new List<PersonagemViewModels>();
+
+            if(response.IsSuccessStatusCode)
+            {
+                lista = JsonSerializer.Deserialize<List<PersonagemViewModels>>(responseContent, JsonSerializerOptions.Web);
+                return lista;
+            }
+            else
+            {
+                throw new Exception(responseContent);
+            }
+        }
+
+        public async Task<PersonagemViewModels> InsertAsync(string token, PersonagemViewModels personagem)
+        {
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var content = new StringContent(JsonSerializer.Serialize(personagem));
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            var response = await _http.PostAsync("personagens", content);
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            if(response.IsSuccessStatusCode)
+            {
+                personagem.Id = Convert.ToInt32(responseContent);
+                return personagem;
+            }
+            else
+            {
+                throw new Exception(responseContent);
+            }
+        }
+    }
+}
