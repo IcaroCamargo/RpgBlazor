@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\2DS\\DS\\RpgBlazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAE63EE1-327D-A700-07A8-FF6847A0E3E3}|RpgBlazor.csproj|d:\\2ds\\ds\\rpgblazor\\services\\personagemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAE63EE1-327D-A700-07A8-FF6847A0E3E3}|RpgBlazor.csproj|solutionrelative:services\\personagemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAE63EE1-327D-A700-07A8-FF6847A0E3E3}|RpgBlazor.csproj|d:\\2ds\\ds\\rpgblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAE63EE1-327D-A700-07A8-FF6847A0E3E3}|RpgBlazor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAE63EE1-327D-A700-07A8-FF6847A0E3E3}|RpgBlazor.csproj|d:\\2ds\\ds\\rpgblazor\\components\\pages\\personagem\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAE63EE1-327D-A700-07A8-FF6847A0E3E3}|RpgBlazor.csproj|solutionrelative:components\\pages\\personagem\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonagemService.cs",
+              "DocumentMoniker": "D:\\2DS\\DS\\RpgBlazor\\Services\\PersonagemService.cs",
+              "RelativeDocumentMoniker": "Services\\PersonagemService.cs",
+              "ToolTip": "D:\\2DS\\DS\\RpgBlazor\\Services\\PersonagemService.cs",
+              "RelativeToolTip": "Services\\PersonagemService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:21:55.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\2DS\\DS\\RpgBlazor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\2DS\\DS\\RpgBlazor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:22:35.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\2DS\\DS\\RpgBlazor\\Components\\Pages\\Personagem\\Index.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Personagem\\Index.razor",
+              "ToolTip": "D:\\2DS\\DS\\RpgBlazor\\Components\\Pages\\Personagem\\Index.razor",
+              "RelativeToolTip": "Components\\Pages\\Personagem\\Index.razor",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T23:19:41.759Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -162,3 +162,4 @@ D:\2DS\DS\RpgBlazor\obj\Debug\net9.0\refint\RpgBlazor.dll
 D:\2DS\DS\RpgBlazor\obj\Debug\net9.0\RpgBlazor.pdb
 D:\2DS\DS\RpgBlazor\obj\Debug\net9.0\RpgBlazor.genruntimeconfig.cache
 D:\2DS\DS\RpgBlazor\obj\Debug\net9.0\ref\RpgBlazor.dll
+D:\2DS\DS\RpgBlazor\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

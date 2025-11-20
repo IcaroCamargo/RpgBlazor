@@ -21,7 +21,7 @@ namespace RpgBlazor.Services
         {
             _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-            var response = await _http.GetAsync("Personagems/GetAll");
+            var response = await _http.GetAsync("Personagens/GetAll");
             var responseContent = await response.Content.ReadAsStringAsync();
             List<PersonagemViewModels> lista = new List<PersonagemViewModels>();
 
@@ -49,6 +49,25 @@ namespace RpgBlazor.Services
             if(response.IsSuccessStatusCode)
             {
                 personagem.Id = Convert.ToInt32(responseContent);
+                return personagem;
+            }
+            else
+            {
+                throw new Exception(responseContent);
+            }
+        }
+
+        public async Task<PersonagemViewModels> GetByIdAsync(string token, int id)
+        {
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var response = await _http.GetAsync($"personagens/{id}");
+            var responseContent = await response.Content.ReadAsStringAsync();
+            PersonagemViewModels personagem = new PersonagemViewModels();
+
+            if(response.IsSuccessStatusCode)
+            {
+                personagem = JsonSerializer.Deserialize<PersonagemViewModels>(responseContent, JsonSerializerOptions.Web);
                 return personagem;
             }
             else
